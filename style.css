@@ -1,0 +1,120 @@
+html{
+    box-sizing: border-box;
+    background-color: #2a3575;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #newsletter {
+    width: 57%;
+    height: 75%;
+    display: flex;
+    border: 3px white;
+    overflow: hidden;
+    margin: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 6px 5px 29px 0px rgba(0,0,0,0.58);
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  
+  #text-section {
+    display: inline-block;
+    width: 450px;
+    height: 500px;
+    border: 3px white;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+  }
+
+  #image-section {
+    display: inline-block;
+    width: 315px;
+    height: 500px;
+    border: 3px solid blue;
+    vertical-align: top;
+    display: flex;
+    margin: 20px;
+    background-color: white;
+  
+  }
+
+  #image-section img {
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.1);
+    border-radius: 5px;
+  }
+
+  #interactive button {
+    color: white;
+    background-color: #39387F;
+    border-radius: 6px;
+    width: 300px;
+    height: 40px;
+  }
+
+  #interactive label {
+    color:#39387F;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 12px;
+  }
+
+  #text-section h1 {
+    color: #39387F;
+  }
+
+  .circle-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .circle-list li::before {
+    content: '\2713';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 5px;
+    background-color: #E66F03;
+    color: white;
+  }
+
+  body {
+    padding: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  .circle-list li {
+    margin-bottom: 10px;
+  }
+
+  #interactive input#email-input {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  #interactive button:hover{
+    cursor: pointer;
+    background-color:#7072DB ;
+    transform: scale(1.1);
+  }
