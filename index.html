@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Newsletter</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">"
+  
 </head>
 <body>
   <div id='newsletter'>
@@ -23,7 +24,8 @@
       <form>
         <div id='interactive'>
         <label for="email-input">Email Address</label>
-        <input type='Email'  id= "email-input" name="Email" value='email@company.com'>
+        <input type='Email'  id= "email-input" name="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+        <span class="error" id="error-message"></span>
         <br>
           <br>
         <button> Subscribe to monthly newsletter</button>
@@ -31,5 +33,7 @@
     </div>
       <div id='image-section'><img src="img1.svg" alt='image desktop'></div>
        </div>
+
+       <script src="code.js"></script>
 </body>
 </html>
